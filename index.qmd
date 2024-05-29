@@ -1,0 +1,20 @@
+---
+title: "Conditional-meta-issue"
+---
+
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+div:
+
+::: {.content-visible when-meta="title"}
+
+title: {{< meta title >}}
+
+:::
+
+span:
+[title: {{< meta title >}}]{.content-visible when-meta="title"}
+
+title: {{< meta title >}}
